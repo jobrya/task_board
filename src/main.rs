@@ -3,8 +3,8 @@ use yew::prelude::*;
 mod components;
 
 use components::{
-    column::Column,
     project_header::ProjectHeader,
+    board::Board,
 };
 
 #[function_component]
@@ -12,9 +12,7 @@ fn App() -> Html {
     html! {
         <main>
             <ProjectHeader/>
-            <Column/>
-            <Column/>
-            <Column/>
+            <Board/>
         </main>
     }
 }
